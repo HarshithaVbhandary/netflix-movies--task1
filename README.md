@@ -22,10 +22,7 @@ The cleaned dataset can be used for further analysis, visualization, or building
 The following steps were performed to clean the dataset:
 
 1. **Loaded the dataset** using Pandas from the `.csv` file.
-2. **Checked for missing values** and handled them:
-   - Filled missing `country` with `"unknown"`.
-   - Filled missing `rating` with `"Not Rated"`.
-   - Dropped rows where `type` or `title` were missing.
+2. **Checked for missing values**  using '.isnull()'.
 3. **Removed duplicate rows** using `.drop_duplicates()`.
 4. **Converted `date_added`** to `datetime` format.
 5. **Standardized text values** in `country` column to lowercase.
